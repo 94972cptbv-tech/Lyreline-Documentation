@@ -1,0 +1,23 @@
+site_name: Lyreline Documentation
+site_description: User guide, support, privacy, and Safari extension documentation for Lyreline.
+site_url: https://94972cptbv-tech.github.io/Lyreline-Documentation/
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: mkdocs
+
+nav:
+  - Home: index.md
+  - Quick Start: quick-start.md
+  - User Guide: user-guide.md
+  - Safari Extension: safari-extension.md
+  - Data Safety: data-safety.md
+  - Support: support.md
+  - Privacy Policy: privacy.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+
+strict: true
