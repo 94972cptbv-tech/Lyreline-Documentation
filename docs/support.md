@@ -72,7 +72,11 @@ and provides an appropriate transfer method.
 
 ## Contact
 
-Public support contact: **[TO BE PROVIDED BEFORE PUBLICATION]**
+Official Lyreline support contact:
+
+**Lyreline Support**
+
+[lyreline.support@icloud.com](mailto:lyreline.support@icloud.com)
 
 Until a public contact is confirmed, this page serves as the primary Support URL
 and self-service troubleshooting reference.

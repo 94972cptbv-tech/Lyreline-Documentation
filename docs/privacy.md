@@ -43,4 +43,8 @@ before data is removed.
 
 ## Contact
 
-Public privacy contact: **[TO BE PROVIDED BEFORE PUBLICATION]**
+Privacy and support contact:
+
+**Lyreline Support**
+
+[lyreline.support@icloud.com](mailto:lyreline.support@icloud.com)
