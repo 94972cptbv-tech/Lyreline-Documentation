@@ -6,7 +6,7 @@
 2. Give the session a descriptive title.
 3. Choose the application or window you intend to document using Apple's
    system capture picker.
-4. Start Recording.
+4. Choose **Start Session** and confirm the workspace shows **Recording**.
 5. Create a named capture, import an image, or add a written step.
 
 Capture is user initiated. Lyreline captures only after you request it and does
@@ -29,3 +29,6 @@ session and choose **Continue Capture Session** to select a current source and
 continue, or edit the linked Procedure without recording.
 
 For more detail, continue to the [User Guide](user-guide.md).
+
+For a complete beginner example from first capture through PDF and archive, use
+[Your First Lyreline Procedure](your-first-procedure.md).

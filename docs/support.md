@@ -5,6 +5,8 @@ These resources cover the most common questions:
 - [Quick Start](quick-start.md)
 - [User Guide](user-guide.md)
 - [Safari Extension](safari-extension.md)
+- [Capturing Web Pages](capturing-web-pages.md)
+- [Troubleshooting](troubleshooting.md)
 - [Data Safety](data-safety.md)
 - [Privacy Policy](privacy.md)
 
@@ -78,5 +80,5 @@ Official Lyreline support contact:
 
 [lyreline.support@icloud.com](mailto:lyreline.support@icloud.com)
 
-Until a public contact is confirmed, this page serves as the primary Support URL
-and self-service troubleshooting reference.
+This page serves as the App Store Support URL and self-service troubleshooting
+reference.

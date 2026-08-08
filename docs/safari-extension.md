@@ -13,7 +13,7 @@ available for other websites and Mac applications.
 4. Grant the extension website access for that page.
 5. In Lyreline, create or resume a Capture Session and select the exact Safari
    window.
-6. Start Recording.
+6. Start the session and confirm its capture state is **Recording**.
 7. Enable **Observe supported Safari workflows**.
 
 Lyreline reports extension embedding, Safari enablement, native-bridge

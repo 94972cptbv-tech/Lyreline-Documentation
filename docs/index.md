@@ -11,7 +11,11 @@ and exported as PDF or PNG.
 
 ## Start here
 
+- [Lyreline 1.0 Tester Program](testing/index.md) — complete a standard test and
+  report consistent feedback.
 - [Quick Start](quick-start.md) — create and resume a Capture Session.
+- [Your First Lyreline Procedure](your-first-procedure.md) — follow one complete
+  Capture → Organize → Procedure → Review → Publish example.
 - [User Guide](user-guide.md) — capture, edit, organize, review, and publish.
 - [Safari Extension](safari-extension.md) — enable approved Safari workflows.
 - [Data Safety](data-safety.md) — archives, restore, and Recently Deleted.
