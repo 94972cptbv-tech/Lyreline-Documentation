@@ -1,5 +1,7 @@
 # Safari Testing — Optional
 
+[Tester Program](index.md) · [Standard Test](tester-guide.md) · [Your Own Workflow](real-work-test.md) · [Advanced](advanced-testing.md) · **Safari** · [Feedback](feedback.md)
+
 Version 1 contains two different Safari experiences. Keep them separate when
 reporting feedback.
 

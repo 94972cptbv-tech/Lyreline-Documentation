@@ -1,0 +1,209 @@
+.lyreline-feedback {
+  --feedback-border: #c8ced8;
+  --feedback-accent: #2457a6;
+  --feedback-surface: #f7f8fa;
+  max-width: 58rem;
+}
+
+.feedback-section {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--feedback-border);
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+fieldset.feedback-section,
+.nested-fieldset {
+  min-width: 0;
+}
+
+.feedback-section h2,
+.feedback-section legend {
+  margin: 0 0 0.75rem;
+  color: #202936;
+  font-size: 1.25rem;
+  font-weight: 650;
+}
+
+.feedback-section legend {
+  padding: 0 0.3rem;
+}
+
+.feedback-grid,
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.feedback-field {
+  margin: 0 0 1rem;
+}
+
+.feedback-field label,
+.ratings-grid label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.feedback-field input,
+.feedback-field select,
+.feedback-field textarea,
+.ratings-grid select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid #8993a3;
+  border-radius: 0.3rem;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+}
+
+.feedback-field textarea {
+  resize: vertical;
+}
+
+.feedback-field input:focus-visible,
+.feedback-field select:focus-visible,
+.feedback-field textarea:focus-visible,
+.ratings-grid select:focus-visible,
+.feedback-actions button:focus-visible,
+.feedback-email-button:focus-visible,
+.choice-grid input:focus-visible {
+  outline: 3px solid #77a9ef;
+  outline-offset: 2px;
+}
+
+.choice-grid label {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  padding: 0.7rem;
+  border: 1px solid var(--feedback-border);
+  border-radius: 0.35rem;
+  background: var(--feedback-surface);
+}
+
+.choice-grid input {
+  margin-top: 0.15rem;
+}
+
+.ratings-grid {
+  display: grid;
+  grid-template-columns: minmax(13rem, 1fr) minmax(7rem, 10rem);
+  gap: 0.65rem 1rem;
+  align-items: center;
+}
+
+.rating-key,
+.field-help,
+.optional,
+.copy-status {
+  color: #526072;
+}
+
+.optional {
+  font-size: 0.82em;
+  font-weight: 500;
+}
+
+.nested-fieldset {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #d8dde5;
+  border-radius: 0.35rem;
+  background: var(--feedback-surface);
+}
+
+.nested-fieldset legend {
+  font-size: 1rem;
+}
+
+.severity-guide {
+  margin: 0 0 1rem;
+}
+
+.severity-guide dt {
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+.severity-guide dd {
+  margin-left: 0;
+}
+
+.privacy-reminder {
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  border: 2px solid #986f14;
+  border-radius: 0.5rem;
+  background: #fff9e8;
+  color: #332909;
+}
+
+.privacy-reminder h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.feedback-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.feedback-actions button,
+.feedback-email-button {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--feedback-accent);
+  border-radius: 0.35rem;
+  font: inherit;
+  font-weight: 650;
+  line-height: 1.25;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.feedback-actions button {
+  background: var(--feedback-accent);
+  color: #fff;
+}
+
+.feedback-email-button {
+  background: #fff;
+  color: var(--feedback-accent);
+}
+
+.copy-status {
+  min-height: 1.5em;
+  font-weight: 600;
+}
+
+.copy-status.is-error {
+  color: #9a1b1b;
+}
+
+.manual-feedback-template pre {
+  max-height: 34rem;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 40rem) {
+  .feedback-section {
+    padding: 1rem;
+  }
+
+  .ratings-grid {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .ratings-grid select {
+    margin-bottom: 0.6rem;
+  }
+}

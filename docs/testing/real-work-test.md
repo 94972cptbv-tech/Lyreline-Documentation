@@ -1,5 +1,7 @@
 # Test Your Own Workflow
 
+[Tester Program](index.md) · [Standard Test](tester-guide.md) · **Your Own Workflow** · [Advanced](advanced-testing.md) · [Safari](safari-testing.md) · [Feedback](feedback.md)
+
 Complete this test after the [standard test](tester-guide.md). Choose one
 workflow you already understand so you can evaluate Lyreline rather than learn
 the work at the same time.

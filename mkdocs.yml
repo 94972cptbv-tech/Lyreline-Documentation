@@ -9,13 +9,6 @@ theme:
 
 nav:
   - Home: index.md
-  - Tester Program:
-      - Start Here: testing/index.md
-      - Standard Test: testing/tester-guide.md
-      - Test Your Own Workflow: testing/real-work-test.md
-      - Advanced Testing: testing/advanced-testing.md
-      - Safari Testing: testing/safari-testing.md
-      - Report Feedback: testing/feedback.md
   - Quick Start: quick-start.md
   - Your First Procedure: your-first-procedure.md
   - User Guide: user-guide.md
@@ -29,5 +22,11 @@ nav:
 markdown_extensions:
   - toc:
       permalink: true
+
+extra_css:
+  - stylesheets/feedback.css
+
+extra_javascript:
+  - javascripts/feedback.js
 
 strict: true

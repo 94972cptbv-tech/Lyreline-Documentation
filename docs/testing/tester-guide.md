@@ -1,5 +1,7 @@
 # Standard Test — Start Here
 
+[Tester Program](index.md) · **Standard Test** · [Your Own Workflow](real-work-test.md) · [Advanced](advanced-testing.md) · [Safari](safari-testing.md) · [Feedback](feedback.md)
+
 **Estimated time:** 20–30 minutes
 **Suggested source:** TextEdit with harmless sample text
 

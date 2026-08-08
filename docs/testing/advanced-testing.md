@@ -1,5 +1,7 @@
 # Advanced Testing — Optional
 
+[Tester Program](index.md) · [Standard Test](tester-guide.md) · [Your Own Workflow](real-work-test.md) · **Advanced** · [Safari](safari-testing.md) · [Feedback](feedback.md)
+
 This page is optional. Choose only the areas relevant to your work. Use
 test-only content, especially for archive, restore, and deletion tests.
 

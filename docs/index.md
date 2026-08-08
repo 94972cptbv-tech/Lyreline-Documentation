@@ -11,8 +11,6 @@ and exported as PDF or PNG.
 
 ## Start here
 
-- [Lyreline 1.0 Tester Program](testing/index.md) — complete a standard test and
-  report consistent feedback.
 - [Quick Start](quick-start.md) — create and resume a Capture Session.
 - [Your First Lyreline Procedure](your-first-procedure.md) — follow one complete
   Capture → Organize → Procedure → Review → Publish example.
