@@ -39,6 +39,16 @@ Use **Fit Width** for tall captures. **Actual Size** is the stable 100% baseline
 200% and 400% are absolute multiples of that baseline. Overlay coordinates stay
 aligned to the original image at every zoom level.
 
+### Numbered callouts and instruction links
+
+A numbered callout combines a marker with an optional label, leader line, and
+visual target. Link a selected callout to the Procedure instruction it explains
+when one image contains several annotated actions or areas. The link remains
+stable even if the visible callout number changes.
+
+Callouts remain non-destructive presentation edits and do not alter the original
+captured image. See [Numbered Callouts](numbered-callouts.md) for details.
+
 ## Procedures and review
 
 Included moments can become ordered Procedure steps. Organize steps into
@@ -48,6 +58,18 @@ they are approved or intentionally returned for changes.
 
 A fictional Northstar work-order example may be used to learn the workflow. It
 contains demonstration-only names and data and is not a customer environment.
+
+## Continue in Lyreline Studio
+
+Lyreline Studio is an optional advanced composition workspace for authored
+procedure content and presentation data. A supported Lyreline → Studio →
+Lyreline round trip preserves images, presentation edits, numbered callouts,
+optional labels, and instruction links. Studio-authored sections return to
+Lyreline as Procedure steps without fabricating Capture Moments or changing
+historical capture provenance.
+
+Detailed handoff and publication instructions are provided in the separate
+[Lyreline Studio documentation](https://94972cptbv-tech.github.io/LyrelineStudio-Documentation/using-with-lyreline/).
 
 ## Export and publication
 
