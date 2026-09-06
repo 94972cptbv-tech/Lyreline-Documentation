@@ -78,6 +78,17 @@ regions exist, as ordered separate PNG files. Procedure publication creates a
 PDF from the saved document and presentation state. Export destinations are
 chosen by the user.
 
+A Procedure can also be exported as a new Markdown document. Lyreline shows an
+Export Plan first, then creates a `.md` file and, when needed, a sibling assets
+folder containing the current rendered Step visuals. Supported Procedure
+metadata is stored in Lyreline-owned YAML front matter so it can be restored on
+a later Markdown import.
+
+Markdown export does not modify the original imported Markdown and does not
+silently replace existing output. See
+[Markdown Import and Round Trip](markdown-round-trip.md) for the complete
+workflow.
+
 Publishing records a local version snapshot. Editing a later draft does not
 overwrite the prior published version.
 

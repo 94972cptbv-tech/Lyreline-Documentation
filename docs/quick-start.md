@@ -33,6 +33,21 @@ For more detail, continue to the [User Guide](user-guide.md).
 For a complete beginner example from first capture through PDF and archive, use
 [Your First Lyreline Procedure](your-first-procedure.md).
 
+## Start from existing Markdown
+
+If you already have a Markdown document or MkDocs-style source, you can import
+it instead of starting from a new Capture Session. Lyreline shows how headings,
+content, and images will map into a native Procedure before anything is
+created.
+
+After editing or enriching the Procedure, use **Export as Markdown…** to create
+a new `.md` file and sibling visual-assets folder. Supported Lyreline metadata
+travels in YAML front matter and can be restored when the exported Markdown is
+imported again.
+
+See [Markdown Import and Round Trip](markdown-round-trip.md) for the complete
+workflow.
+
 ## Continue in Lyreline Studio
 
 Lyreline Studio is optional for normal Lyreline use. When you want a more

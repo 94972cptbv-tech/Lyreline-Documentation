@@ -7,7 +7,7 @@ non-destructive presentation edits in resumable local projects.
 Original image masters remain unchanged while crops, redactions, highlights,
 labels, selected regions, and numbered callouts shape the published
 presentation. Draft work can be saved, resumed, reviewed, archived, restored,
-and exported as PDF or PNG.
+and exported as PDF, PNG, or portable Markdown.
 
 ## Start here
 
@@ -15,6 +15,9 @@ and exported as PDF or PNG.
 - [Your First Lyreline Procedure](your-first-procedure.md) — follow one complete
   Capture → Organize → Procedure → Review → Publish example.
 - [User Guide](user-guide.md) — capture, edit, organize, review, and publish.
+- [Markdown Import and Round Trip](markdown-round-trip.md) — bring existing
+  Markdown or MkDocs content into Lyreline, enrich it, and export a new
+  Markdown artifact.
 - [Safari Extension](safari-extension.md) — enable approved Safari workflows.
 - [Data Safety](data-safety.md) — archives, restore, and Recently Deleted.
 - [Support](support.md) — troubleshooting and support-request guidance.
