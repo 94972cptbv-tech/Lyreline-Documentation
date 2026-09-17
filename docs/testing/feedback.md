@@ -1,6 +1,6 @@
 # Report Tester Feedback
 
-[Tester Program](index.md) · [Standard Test](tester-guide.md) · [Your Own Workflow](real-work-test.md) · [Advanced](advanced-testing.md) · [Safari](safari-testing.md) · **Feedback**
+[Tester Program](index.md) · [Standard Test](tester-guide.md) · [Your Own Workflow](real-work-test.md) · [Advanced](advanced-testing.md) · [Safari](safari-testing.md) · [Markdown Import & Round Trip](../markdown-round-trip.md) · **Feedback**
 
 Usability findings are as important as technical defects. Complete the fields
 that apply, copy the finished report, and paste it into an email. Nothing you
@@ -10,26 +10,11 @@ enter on this page is transmitted or saved by Lyreline.
   <section class="feedback-section" aria-labelledby="tester-information-heading">
     <h2 id="tester-information-heading">1. Tester information</h2>
     <div class="feedback-grid">
-      <div class="feedback-field">
-        <label for="tester-name">Tester name or initials</label>
-        <input id="tester-name" name="testerName" type="text" autocomplete="name">
-      </div>
-      <div class="feedback-field">
-        <label for="test-date">Test date</label>
-        <input id="test-date" name="testDate" type="date">
-      </div>
-      <div class="feedback-field">
-        <label for="lyreline-version">Lyreline version/build</label>
-        <input id="lyreline-version" name="version" type="text" value="1.0 / Build 1">
-      </div>
-      <div class="feedback-field">
-        <label for="macos-version">macOS version</label>
-        <input id="macos-version" name="macOS" type="text" placeholder="For example, macOS 15.5">
-      </div>
-      <div class="feedback-field">
-        <label for="mac-model">Mac model <span class="optional">Optional</span></label>
-        <input id="mac-model" name="macModel" type="text" placeholder="If known">
-      </div>
+      <div class="feedback-field"><label for="tester-name">Tester name or initials</label><input id="tester-name" name="testerName" type="text" autocomplete="name"></div>
+      <div class="feedback-field"><label for="test-date">Test date</label><input id="test-date" name="testDate" type="date"></div>
+      <div class="feedback-field"><label for="lyreline-version">Lyreline version/build</label><input id="lyreline-version" name="version" type="text" value="1.0 / Build 1"></div>
+      <div class="feedback-field"><label for="macos-version">macOS version</label><input id="macos-version" name="macOS" type="text" placeholder="For example, macOS 15.5"></div>
+      <div class="feedback-field"><label for="mac-model">Mac model <span class="optional">Optional</span></label><input id="mac-model" name="macModel" type="text" placeholder="If known"></div>
     </div>
   </section>
 
@@ -42,6 +27,7 @@ enter on this page is transmitted or saved by Lyreline.
       <label><input type="checkbox" name="testType" value="Advanced Testing"> Advanced Testing</label>
       <label><input type="checkbox" name="testType" value="Safari Manual Capture"> Safari Manual Capture</label>
       <label><input type="checkbox" name="testType" value="Safari Workflow Observation"> Safari Workflow Observation</label>
+      <label><input type="checkbox" name="testType" value="Markdown Import and Round Trip"> Markdown Import &amp; Round Trip</label>
     </div>
   </fieldset>
 
@@ -49,29 +35,39 @@ enter on this page is transmitted or saved by Lyreline.
     <h2 id="overall-experience-heading">3. Overall experience</h2>
     <p class="rating-key"><strong>1</strong> = Very difficult / poor &nbsp; <strong>5</strong> = Very easy / excellent</p>
     <div class="ratings-grid">
-      <label for="rating-getting-started">Getting started</label>
-      <select id="rating-getting-started" name="ratingGettingStarted"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <label for="rating-capture">Capture</label>
-      <select id="rating-capture" name="ratingCapture"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <label for="rating-organizing">Organizing captured content</label>
-      <select id="rating-organizing" name="ratingOrganizing"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <label for="rating-procedure">Creating/editing a Procedure</label>
-      <select id="rating-procedure" name="ratingProcedure"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <label for="rating-image-editing">Image editing</label>
-      <select id="rating-image-editing" name="ratingImageEditing"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <label for="rating-review">Publication Review</label>
-      <select id="rating-review" name="ratingReview"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <label for="rating-export">Exported documentation quality</label>
-      <select id="rating-export" name="ratingExport"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <label for="rating-help">Help/documentation</label>
-      <select id="rating-help" name="ratingHelp"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <label for="rating-overall">Overall usefulness</label>
-      <select id="rating-overall" name="ratingOverall"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <label for="rating-getting-started">Getting started</label><select id="rating-getting-started" name="ratingGettingStarted"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <label for="rating-capture">Capture</label><select id="rating-capture" name="ratingCapture"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <label for="rating-organizing">Organizing captured content</label><select id="rating-organizing" name="ratingOrganizing"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <label for="rating-procedure">Creating/editing a Procedure</label><select id="rating-procedure" name="ratingProcedure"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <label for="rating-image-editing">Image editing</label><select id="rating-image-editing" name="ratingImageEditing"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <label for="rating-markdown">Markdown import &amp; round trip</label><select id="rating-markdown" name="ratingMarkdown"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <label for="rating-review">Publication Review</label><select id="rating-review" name="ratingReview"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <label for="rating-export">Exported documentation quality</label><select id="rating-export" name="ratingExport"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <label for="rating-help">Help/documentation</label><select id="rating-help" name="ratingHelp"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <label for="rating-overall">Overall usefulness</label><select id="rating-overall" name="ratingOverall"><option value="">Not rated</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
     </div>
   </section>
 
+  <section class="feedback-section" aria-labelledby="markdown-heading">
+    <h2 id="markdown-heading">4. Markdown import &amp; round-trip testing</h2>
+    <p class="field-help">If you tested Markdown, try the full workflow: import an existing <code>.md</code> file, review what Lyreline found, create native content, save and reopen it, export it back to Markdown, then re-import the exported Markdown and compare the result.</p>
+    <div class="feedback-grid">
+      <div class="feedback-field"><label for="markdown-source">What kind of Markdown did you import?</label><select id="markdown-source" name="markdownSource"><option value="">Choose…</option><option>Existing standalone Markdown</option><option>MkDocs-style Markdown</option><option>Previously exported from Lyreline</option><option>Other</option><option>Did not test Markdown</option></select></div>
+      <div class="feedback-field"><label for="markdown-structure">Were headings, steps, and ordering recognized correctly?</label><select id="markdown-structure" name="markdownStructure"><option value="">Choose…</option><option>Yes</option><option>Mostly</option><option>No</option><option>Not sure</option><option>Not tested</option></select></div>
+      <div class="feedback-field"><label for="markdown-assets">Were referenced images/assets handled as expected?</label><select id="markdown-assets" name="markdownAssets"><option value="">Choose…</option><option>Yes</option><option>Mostly</option><option>No</option><option>No assets in source</option><option>Not tested</option></select></div>
+      <div class="feedback-field"><label for="markdown-plan">Was the review/conversion plan clear before native content was created?</label><select id="markdown-plan" name="markdownPlan"><option value="">Choose…</option><option>Yes</option><option>Mostly</option><option>No</option><option>I did not see a review plan</option><option>Not tested</option></select></div>
+      <div class="feedback-field"><label for="markdown-native">Did the resulting native Lyreline content match what you expected?</label><select id="markdown-native" name="markdownNative"><option value="">Choose…</option><option>Yes</option><option>Mostly</option><option>No</option><option>Could not complete</option><option>Not tested</option></select></div>
+      <div class="feedback-field"><label for="markdown-save-reopen">Did the imported content survive save/reopen correctly?</label><select id="markdown-save-reopen" name="markdownSaveReopen"><option value="">Choose…</option><option>Yes</option><option>Mostly</option><option>No</option><option>Not tested</option></select></div>
+      <div class="feedback-field"><label for="markdown-export">Were you able to export the Procedure back to Markdown?</label><select id="markdown-export" name="markdownExport"><option value="">Choose…</option><option>Yes</option><option>No</option><option>Not attempted</option></select></div>
+      <div class="feedback-field"><label for="markdown-reimport">What happened when you re-imported the exported Markdown?</label><select id="markdown-reimport" name="markdownReimport"><option value="">Choose…</option><option>Matched expectations</option><option>Minor differences</option><option>Major differences</option><option>Re-import failed</option><option>Not attempted</option></select></div>
+    </div>
+    <div class="feedback-field"><label for="markdown-loss">What, if anything, was lost, changed, skipped, or reordered during import/export/re-import?</label><textarea id="markdown-loss" name="markdownLoss" rows="4" placeholder="For example, heading level, image reference, instruction text, ordering, or front matter"></textarea></div>
+    <div class="feedback-field"><label for="markdown-unexpected">Did Lyreline interpret anything differently from what you expected?</label><textarea id="markdown-unexpected" name="markdownUnexpected" rows="3"></textarea></div>
+    <div class="feedback-field"><label for="markdown-comments">Other Markdown workflow feedback</label><textarea id="markdown-comments" name="markdownComments" rows="3"></textarea></div>
+  </section>
+
   <section class="feedback-section" aria-labelledby="usability-heading">
-    <h2 id="usability-heading">4. Usability feedback</h2>
+    <h2 id="usability-heading">5. Usability feedback</h2>
     <div class="feedback-field"><label for="easiest">What was easiest?</label><textarea id="easiest" name="easiest" rows="3"></textarea></div>
     <div class="feedback-field"><label for="confusing">What was most confusing?</label><textarea id="confusing" name="confusing" rows="3"></textarea></div>
     <div class="feedback-field"><label for="hesitated">Where did you hesitate?</label><textarea id="hesitated" name="hesitated" rows="3"></textarea></div>
@@ -92,13 +88,13 @@ enter on this page is transmitted or saved by Lyreline.
         <div class="feedback-field"><label for="noticed-help">Did you notice Lyreline had Help?</label><select id="noticed-help" name="noticedHelp"><option value="">Choose…</option><option>Yes</option><option>No</option><option>Not sure</option></select></div>
         <div class="feedback-field"><label for="help-answered">Did Help answer your question?</label><select id="help-answered" name="helpAnswered"><option value="">Choose…</option><option>Yes</option><option>Partly</option><option>No</option><option>Did not use Help</option></select></div>
       </div>
-      <div class="feedback-field"><label for="help-used">Which Help pages did you use?</label><input id="help-used" name="helpUsed" type="text" placeholder="For example, Quick Start or User Guide"></div>
+      <div class="feedback-field"><label for="help-used">Which Help pages did you use?</label><input id="help-used" name="helpUsed" type="text" placeholder="For example, Quick Start, Markdown Import and Round Trip, or User Guide"></div>
       <div class="feedback-field"><label for="help-missing">What topic was missing or too technical?</label><textarea id="help-missing" name="helpMissing" rows="3"></textarea></div>
     </fieldset>
   </section>
 
   <section class="feedback-section" aria-labelledby="value-heading">
-    <h2 id="value-heading">5. Value</h2>
+    <h2 id="value-heading">6. Value</h2>
     <div class="feedback-grid">
       <div class="feedback-field"><label for="saved-time">Did Lyreline save time compared with how you normally create documentation?</label><select id="saved-time" name="savedTime"><option value="">Choose…</option><option>Yes</option><option>Somewhat</option><option>No</option><option>Not sure</option></select></div>
       <div class="feedback-field"><label for="use-again">Would you use Lyreline again?</label><select id="use-again" name="useAgain"><option value="">Choose…</option><option>Yes</option><option>Maybe</option><option>No</option></select></div>
@@ -110,9 +106,9 @@ enter on this page is transmitted or saved by Lyreline.
   </section>
 
   <section class="feedback-section optional-section" aria-labelledby="defect-heading">
-    <h2 id="defect-heading">6. Defect report <span class="optional">Optional</span></h2>
+    <h2 id="defect-heading">7. Defect report <span class="optional">Optional</span></h2>
     <div class="feedback-grid">
-      <div class="feedback-field"><label for="defect-area">Area</label><input id="defect-area" name="defectArea" type="text" placeholder="For example, Capture or PDF export"></div>
+      <div class="feedback-field"><label for="defect-area">Area</label><input id="defect-area" name="defectArea" type="text" placeholder="For example, Capture, Markdown import, or PDF export"></div>
       <div class="feedback-field"><label for="defect-severity">Severity</label><select id="defect-severity" name="defectSeverity"><option value="">Choose…</option><option>BLOCKER</option><option>MAJOR</option><option>MINOR</option><option>USABILITY</option><option>SUGGESTION</option></select></div>
     </div>
     <details class="severity-guide"><summary>Severity definitions</summary><dl><dt>BLOCKER</dt><dd>Cannot continue the primary workflow or significant data appears lost.</dd><dt>MAJOR</dt><dd>Feature fails or behaves incorrectly, but another path may exist.</dd><dt>MINOR</dt><dd>Annoying or confusing but does not prevent completion.</dd><dt>USABILITY</dt><dd>Feature technically works, but it is difficult to understand or use.</dd><dt>SUGGESTION</dt><dd>Enhancement or idea rather than a defect.</dd></dl></details>
@@ -129,14 +125,14 @@ enter on this page is transmitted or saved by Lyreline.
   </section>
 
   <section class="feedback-section optional-section" aria-labelledby="feature-heading">
-    <h2 id="feature-heading">7. Feature request or idea <span class="optional">Optional</span></h2>
+    <h2 id="feature-heading">8. Feature request or idea <span class="optional">Optional</span></h2>
     <div class="feedback-field"><label for="feature-expectation">What did you expect Lyreline to do?</label><textarea id="feature-expectation" name="featureExpectation" rows="3"></textarea></div>
     <div class="feedback-field"><label for="feature-value">Why would this be useful?</label><textarea id="feature-value" name="featureValue" rows="3"></textarea></div>
     <div class="feedback-field"><label for="feature-importance">How important is it?</label><select id="feature-importance" name="featureImportance"><option value="">Choose…</option><option>Blocking</option><option>Important</option><option>Nice to have</option></select></div>
   </section>
 
   <section class="feedback-section" aria-labelledby="final-comments-heading">
-    <h2 id="final-comments-heading">8. Final comments</h2>
+    <h2 id="final-comments-heading">9. Final comments</h2>
     <div class="feedback-field"><label for="final-comments">Anything else you want us to know?</label><textarea id="final-comments" name="finalComments" rows="5"></textarea></div>
   </section>
 
@@ -184,10 +180,24 @@ Capture:
 Organizing captured content:
 Creating/editing a Procedure:
 Image editing:
+Markdown import & round trip:
 Publication Review:
 Exported documentation quality:
 Help/documentation:
 Overall usefulness:
+
+MARKDOWN IMPORT & ROUND TRIP
+Source type:
+Headings/steps/order recognized:
+Images/assets handled correctly:
+Review/conversion plan clear:
+Native Lyreline content matched expectations:
+Save/reopen preserved imported content:
+Export back to Markdown:
+Re-import result:
+Anything lost, changed, skipped, or reordered:
+Unexpected interpretation:
+Other Markdown feedback:
 
 USABILITY
 What was easiest:

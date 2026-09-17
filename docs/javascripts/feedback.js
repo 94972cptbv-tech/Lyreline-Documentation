@@ -46,10 +46,25 @@
       answered("Organizing captured content", text(data, "ratingOrganizing"), "/5"),
       answered("Creating/editing a Procedure", text(data, "ratingProcedure"), "/5"),
       answered("Image editing", text(data, "ratingImageEditing"), "/5"),
+      answered("Markdown import & round trip", text(data, "ratingMarkdown"), "/5"),
       answered("Publication Review", text(data, "ratingReview"), "/5"),
       answered("Exported documentation quality", text(data, "ratingExport"), "/5"),
       answered("Help/documentation", text(data, "ratingHelp"), "/5"),
       answered("Overall usefulness", text(data, "ratingOverall"), "/5")
+    ]);
+
+    addSection(report, "MARKDOWN IMPORT & ROUND TRIP", [
+      answered("Source type", text(data, "markdownSource")),
+      answered("Headings/steps/order recognized", text(data, "markdownStructure")),
+      answered("Images/assets handled correctly", text(data, "markdownAssets")),
+      answered("Review/conversion plan clear", text(data, "markdownPlan")),
+      answered("Native Lyreline content matched expectations", text(data, "markdownNative")),
+      answered("Save/reopen preserved imported content", text(data, "markdownSaveReopen")),
+      answered("Export back to Markdown", text(data, "markdownExport")),
+      answered("Re-import result", text(data, "markdownReimport")),
+      answered("Lost, changed, skipped, or reordered", text(data, "markdownLoss")),
+      answered("Unexpected interpretation", text(data, "markdownUnexpected")),
+      answered("Other Markdown feedback", text(data, "markdownComments"))
     ]);
 
     addSection(report, "USABILITY", [
