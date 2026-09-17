@@ -12,7 +12,7 @@ enter on this page is transmitted or saved by Lyreline.
     <div class="feedback-grid">
       <div class="feedback-field"><label for="tester-name">Tester name or initials</label><input id="tester-name" name="testerName" type="text" autocomplete="name"></div>
       <div class="feedback-field"><label for="test-date">Test date</label><input id="test-date" name="testDate" type="date"></div>
-      <div class="feedback-field"><label for="lyreline-version">Lyreline version/build</label><input id="lyreline-version" name="version" type="text" value="1.0 / Build 1"></div>
+      <div class="feedback-field"><label for="lyreline-version">Lyreline version/build</label><input id="lyreline-version" name="version" type="text" placeholder="For example, 1.0 / Build 7"></div>
       <div class="feedback-field"><label for="macos-version">macOS version</label><input id="macos-version" name="macOS" type="text" placeholder="For example, macOS 15.5"></div>
       <div class="feedback-field"><label for="mac-model">Mac model <span class="optional">Optional</span></label><input id="mac-model" name="macModel" type="text" placeholder="If known"></div>
     </div>
@@ -144,7 +144,7 @@ enter on this page is transmitted or saved by Lyreline.
 
   <div class="feedback-actions">
     <button id="copy-feedback" type="button">Copy Feedback</button>
-    <a class="feedback-email-button" href="mailto:lyreline.support@icloud.com?subject=Lyreline%201.0%20Tester%20Feedback">Open Email</a>
+    <a class="feedback-email-button" href="mailto:lyreline.support@icloud.com?subject=Lyreline%20Beta%20Tester%20Feedback">Open Email</a>
   </div>
   <p id="feedback-copy-status" class="copy-status" role="status" aria-live="polite"></p>
 </form>
@@ -163,12 +163,12 @@ your report into a URL or transmit any form value.
 
 <details class="manual-feedback-template">
   <summary>Manual copy template if JavaScript is unavailable</summary>
-  <pre>LYRELINE 1.0 TESTER FEEDBACK
+  <pre>LYRELINE BETA TESTER FEEDBACK
 
 TESTER INFORMATION
 Tester:
 Date:
-Version: 1.0 / Build 1
+Version:
 macOS:
 Mac:
 

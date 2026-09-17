@@ -27,7 +27,7 @@
 
   function buildReport() {
     const data = new FormData(form);
-    const report = ["LYRELINE 1.0 TESTER FEEDBACK"];
+    const report = ["LYRELINE BETA TESTER FEEDBACK"];
 
     addSection(report, "TESTER INFORMATION", [
       answered("Tester", text(data, "testerName")),

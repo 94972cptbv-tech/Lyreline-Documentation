@@ -1,4 +1,4 @@
-# Lyreline 1.0 Tester Program
+# Lyreline Beta Tester Program
 
 Thank you for testing Lyreline. Lyreline is intended to help people capture real
 workflows and turn them into reusable procedures without rebuilding every
@@ -25,7 +25,7 @@ Use fictional or non-confidential material throughout testing.
   feedback template.
 - **[Your First Lyreline Procedure](../your-first-procedure.md)** — a beginner
   walkthrough you can revisit after testing.
-- **[Existing User Guide](../user-guide.md)** — complete Version 1 concepts.
+- **[Existing User Guide](../user-guide.md)** — complete Lyreline concepts and workflows.
 - **[Support](../support.md)** — troubleshooting and the official contact.
 
 ## What good testing looks like
