@@ -40,9 +40,15 @@ and [Capturing Web Pages](capturing-web-pages.md) for full-page behavior.
 ## Capture permission or source problems
 
 If capture is unavailable, confirm Lyreline has Screen Recording permission in
-macOS Privacy & Security. Quit and reopen Lyreline if macOS requests it. If the
-source is missing, make sure the application or window is open and visible,
-then use Apple's picker to select the current window again.
+macOS Privacy & Security. Quit and reopen Lyreline if macOS requests it.
+
+If the source is missing, make sure the application or window is open and
+visible. Use **All / Windows / Applications** and source search to find it, then
+reselect the current source. Confirm **Active Capture Target** shows the
+application or exact window you expect.
+
+If a screenshot command completes but you are unsure what was added, check
+**Last Captured Moment** in the capture workspace before capturing again.
 
 ## Archive or restore problems
 
