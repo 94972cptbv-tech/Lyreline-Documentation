@@ -15,7 +15,7 @@ A typical workflow is:
 2. Review how headings and images will map into Lyreline.
 3. Create a native Lyreline Procedure.
 4. Edit instructions, sections, steps, visuals, and presentation details.
-5. Choose **Export as Markdown…** from the Procedure.
+5. Choose **Export Markdown…** from the Procedure.
 6. Review the Markdown Export Plan.
 7. Choose an export folder.
 8. Lyreline creates a new `.md` file and, when visuals are present, a sibling
@@ -79,7 +79,10 @@ Procedure. Lyreline's native Procedure becomes the current authored version.
 
 ## Exporting as Markdown
 
-Open the Procedure and choose **Export as Markdown…**.
+Open the Procedure and choose **Export Markdown…** from the Procedure toolbar.
+It appears beside **Export PDF…** so the available output formats are easy to
+find. Markdown remains an editable/interchange artifact; PDF remains the
+review-ready finished document.
 
 Lyreline first shows an Export Plan that includes:
 
