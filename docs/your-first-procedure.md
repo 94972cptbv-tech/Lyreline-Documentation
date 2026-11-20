@@ -14,11 +14,13 @@ Keep that window open and visible.
 
 1. In Lyreline, choose **New Capture Session**.
 2. Name it `Create a TextEdit Checklist`.
-3. Choose **Choose Application or Window** and select the exact TextEdit window
-   with Apple's system picker.
+3. Choose **Choose Application or Window**, filter or search if useful, and
+   select the exact TextEdit window. Confirm the source is labeled **WINDOW**
+   rather than the whole application when that is what you intend.
 4. Grant Screen Recording permission if macOS requests it. Lyreline captures
    only when you request a screenshot and does not record continuously.
 5. Choose **Start Session**.
+6. Confirm **Active Capture Target** shows the TextEdit window you selected.
 
 A Capture Session holds working capture material. It is not yet the finished
 Procedure.
@@ -26,11 +28,12 @@ Procedure.
 ## 3. Capture meaningful moments
 
 1. Choose **Screenshot**.
-2. Title the first moment `Enter the checklist items`.
-3. Add a note explaining what the learner should type, then save the moment.
-4. Change the TextEdit document—for example, check or format an item.
-5. Capture another Screenshot titled `Review the completed checklist`.
-6. Add a **Result** or **Note** moment describing the expected outcome.
+2. Confirm **Last Captured Moment** appears in the workspace.
+3. Title the first moment `Enter the checklist items`.
+4. Add a note explaining what the learner should type, then save the moment.
+5. Change the TextEdit document—for example, check or format an item.
+6. Capture another Screenshot titled `Review the completed checklist`.
+7. Add a **Result** or **Note** moment describing the expected outcome.
 
 Capture only transitions that help another person understand the work. More
 screenshots do not automatically make a better procedure.
@@ -50,7 +53,8 @@ identifiers.
 ## 5. Organize the material
 
 1. Edit titles or notes that would not make sense to another reader.
-2. Reorder moments into the intended sequence.
+2. Reorder moments into the intended sequence. In the Procedure editor, use
+   the visible **Drag to Reorder** handles or Move Up / Move Down controls.
 3. Keep **Include in Procedure** enabled only for useful material.
 4. Use **Add Written Step** for an instruction that does not need an image.
 
@@ -77,9 +81,9 @@ the structured document readers will use.
 The original capture remains immutable. Presentation edits affect the curated
 document image, not the original asset.
 
-## 8. Complete Publication Review
+## 8. Review the presentation
 
-From the Capture Session, choose **Review for Publication**. Review each queued
+From the Capture Session, choose **Review Presentation**. Review each queued
 image and choose **Approve for Export** when ready. **Needs Changes** keeps the
 presentation unresolved so it can be corrected.
 
