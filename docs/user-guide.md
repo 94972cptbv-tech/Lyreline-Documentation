@@ -6,8 +6,9 @@ A Capture Session is an editable local project. Its capture lifecycle is shown
 separately from document status:
 
 - **Recording**, **Paused**, or **Completed** describes capture activity.
-- **Draft**, **In Review**, **Published**, or **Archived** describes authored
-  document status.
+- **Draft**, **In Review**, **Snapshot Saved**, or **Archived** describes the
+  Capture Session's project/history state. **Snapshot Saved** means a read-only
+  Capture Snapshot exists; it does not mean the linked Procedure was published.
 
 Saving does not publish or permanently complete a session. You can resume
 capture, edit without recording, or duplicate work as a new draft.
@@ -15,9 +16,15 @@ capture, edit without recording, or duplicate work as a new draft.
 ## Capture content
 
 Lyreline supports user-initiated visible-window capture for selected Mac
-applications and full-page capture for supported Safari workflows. You can also
+applications and full-page capture for supported Safari workflows. The source
+picker can filter **All**, **Windows**, or **Applications**, search by
+application/window title, and distinguish APP from WINDOW selections. You can also
 import an image or add written steps. If a requested capture fails, Lyreline
 does not silently create a lower-quality fallback moment.
+
+The capture workspace shows an **Active Capture Target** card so you can verify
+the selected application or exact window. After a capture, **Last Captured
+Moment** confirms the newest moment with its source context.
 
 For a full-page Safari capture, Lyreline measures the page, captures bounded
 ordered segments, stitches one upright image, and restores the original scroll
@@ -52,9 +59,13 @@ captured image. See [Numbered Callouts](numbered-callouts.md) for details.
 ## Procedures and review
 
 Included moments can become ordered Procedure steps. Organize steps into
-sections, add instructions and expected results, and review each presentation
-before publication. Publication Review keeps unresolved moments visible until
-they are approved or intentionally returned for changes.
+Sections, add instructions and expected results, and use the visible
+**Drag to Reorder** handle (or Move Up / Move Down) to adjust order.
+
+Use **Review Presentation** to verify crop, annotations, redactions, selected
+regions, and other presentation choices before export. **In Review** means the
+authored Procedure is ready for verification and finalization; it does not
+start a collaborative-review workflow.
 
 A fictional Northstar work-order example may be used to learn the workflow. It
 contains demonstration-only names and data and is not a customer environment.
@@ -78,8 +89,10 @@ regions exist, as ordered separate PNG files. Procedure publication creates a
 PDF from the saved document and presentation state. Export destinations are
 chosen by the user.
 
-A Procedure can also be exported as a new Markdown document. Lyreline shows an
-Export Plan first, then creates a `.md` file and, when needed, a sibling assets
+The Procedure toolbar places **Export PDF…** and **Export Markdown…** together.
+PDF is review-ready finished output; Markdown is an editable/interchange copy.
+
+For Markdown, Lyreline shows an Export Plan first, then creates a `.md` file and, when needed, a sibling assets
 folder containing the current rendered Step visuals. Supported Procedure
 metadata is stored in Lyreline-owned YAML front matter so it can be restored on
 a later Markdown import.
@@ -89,8 +102,17 @@ silently replace existing output. See
 [Markdown Import and Round Trip](markdown-round-trip.md) for the complete
 workflow.
 
-Publishing records a local version snapshot. Editing a later draft does not
-overwrite the prior published version.
+A **Capture Snapshot** is separate from Procedure publication. It preserves a
+read-only historical checkpoint of a Capture Session while the linked Procedure
+can continue to be edited and published independently.
+
+## Multilingual authored text
+
+Lyreline supports Unicode authored text in Procedure titles, instructions,
+details, and metadata. Multilingual content is preserved through save/reopen,
+Markdown export/import, the supported Lyreline Studio handoff, and PDF output.
+Validated examples include Latin text with diacritics, Japanese, Chinese, and
+Arabic.
 
 ## Archive and recovery
 
